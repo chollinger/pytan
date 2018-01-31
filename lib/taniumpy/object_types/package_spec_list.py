@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,6 +24,6 @@ class PackageSpecList(BaseType):
         self.cache_info = None
         self.package_spec = []
 
-from package_spec import PackageSpec
-from cache_info import CacheInfo
+from .package_spec import PackageSpec
+from .cache_info import CacheInfo
 

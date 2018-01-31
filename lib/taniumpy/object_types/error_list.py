@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class ErrorList(BaseType):
         
         self.error = []
 
-from xml_error import XmlError
+from .xml_error import XmlError
 

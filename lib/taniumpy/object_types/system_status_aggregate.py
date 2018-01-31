@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -45,5 +46,5 @@ class SystemStatusAggregate(BaseType):
         self.versions = None
         
 
-from version_aggregate_list import VersionAggregateList
+from .version_aggregate_list import VersionAggregateList
 

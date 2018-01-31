@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -33,6 +34,6 @@ class SavedActionPolicy(BaseType):
         self.row_filter_group = None
         
 
-from group import Group
-from group import Group
+from .group import Group
+from .group import Group
 

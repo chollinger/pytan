@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class UserRoleList(BaseType):
         
         self.role = []
 
-from user_role import UserRole
+from .user_role import UserRole
 

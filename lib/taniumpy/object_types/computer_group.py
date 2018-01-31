@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -27,5 +28,5 @@ class ComputerGroup(BaseType):
         self.computer_specs = None
         
 
-from computer_spec_list import ComputerSpecList
+from .computer_spec_list import ComputerSpecList
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class SensorQueryList(BaseType):
         
         self.query = []
 
-from sensor_query import SensorQuery
+from .sensor_query import SensorQuery
 

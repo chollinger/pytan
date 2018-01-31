@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class ParseResultGroupList(BaseType):
         
         self.parse_result_group = []
 
-from parse_result_group import ParseResultGroup
+from .parse_result_group import ParseResultGroup
 

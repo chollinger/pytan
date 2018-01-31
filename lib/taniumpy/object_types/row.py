@@ -1,5 +1,7 @@
 
 
+from builtins import range
+from builtins import object
 class Row(object):
     """A row in a result set.
 

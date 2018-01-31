@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class MetadataList(BaseType):
         
         self.item = []
 
-from metadata_item import MetadataItem
+from .metadata_item import MetadataItem
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,6 +24,6 @@ class ComputerGroupList(BaseType):
         self.cache_info = None
         self.computer_group = []
 
-from computer_group import ComputerGroup
-from cache_info import CacheInfo
+from .computer_group import ComputerGroup
+from .cache_info import CacheInfo
 

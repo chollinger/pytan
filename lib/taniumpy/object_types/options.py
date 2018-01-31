@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -95,5 +96,5 @@ class Options(BaseType):
         self.cache_filters = None
         
 
-from cache_filter_list import CacheFilterList
+from .cache_filter_list import CacheFilterList
 

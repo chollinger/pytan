@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -25,5 +26,5 @@ class ParseResult(BaseType):
         self.parameters = None
         
 
-from parameter_list import ParameterList
+from .parameter_list import ParameterList
 

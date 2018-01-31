@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -57,5 +58,5 @@ class Filter(BaseType):
         self.sensor = None
         
 
-from sensor import Sensor
+from .sensor import Sensor
 

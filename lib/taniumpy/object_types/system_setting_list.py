@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,6 +24,6 @@ class SystemSettingList(BaseType):
         self.cache_info = None
         self.system_setting = []
 
-from system_setting import SystemSetting
-from cache_info import CacheInfo
+from .system_setting import SystemSetting
+from .cache_info import CacheInfo
 

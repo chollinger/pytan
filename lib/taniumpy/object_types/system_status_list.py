@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -25,7 +26,7 @@ class SystemStatusList(BaseType):
         self.cache_info = None
         self.client_status = []
 
-from client_status import ClientStatus
-from system_status_aggregate import SystemStatusAggregate
-from cache_info import CacheInfo
+from .client_status import ClientStatus
+from .system_status_aggregate import SystemStatusAggregate
+from .cache_info import CacheInfo
 

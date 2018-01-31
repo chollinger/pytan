@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,6 +24,6 @@ class SavedActionList(BaseType):
         self.cache_info = None
         self.saved_action = []
 
-from saved_action import SavedAction
-from cache_info import CacheInfo
+from .saved_action import SavedAction
+from .cache_info import CacheInfo
 

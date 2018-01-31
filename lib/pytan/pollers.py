@@ -4,6 +4,7 @@
 # Please do not change the two lines above. See PEP 8, PEP 263.
 """Collection of classes and methods for polling of actions/questions in :mod:`pytan`"""
 
+from builtins import object
 import sys
 
 # disable python from creating .pyc files everywhere
@@ -717,7 +718,7 @@ class ActionPoller(QuestionPoller):
             'failed': {"{}:{}".format(self.obj.id, k): [] for k in failed},
             'unknown': {},
         }
-        for k, v in self.result_map.iteritems():
+        for k, v in self.result_map.items():
             v['total'] = 0
 
         m = "{}Result Map resolved to {}".format
@@ -1020,7 +1021,7 @@ class ActionPoller(QuestionPoller):
                 comp_name = row['Computer Name'][0]
                 known = False
 
-                for s, smap in self.result_map.iteritems():
+                for s, smap in self.result_map.items():
                     if action_status in smap:
                         known = True
                         if comp_name not in self.result_map[s][action_status]:
@@ -1033,8 +1034,8 @@ class ActionPoller(QuestionPoller):
                     if comp_name not in self.result_map['unknown'][action_status]:
                         self.result_map['unknown'][action_status].append(comp_name)
 
-                for s, smap in self.result_map.iteritems():
-                    smap['total'] = sum([len(y) for x, y in smap.iteritems() if x != 'total'])
+                for s, smap in self.result_map.items():
+                    smap['total'] = sum([len(y) for x, y in smap.items() if x != 'total'])
 
             # Use the total from the key defined in self.ACTION_DONE_KEY in self.result_map
             # this total will equate to the number of systems that have finished this action
@@ -1048,7 +1049,7 @@ class ActionPoller(QuestionPoller):
 
             # print a progress debug string
             p = "{}: {}".format
-            progress_list = [p(s, smap['total']) for s, smap in self.result_map.iteritems()]
+            progress_list = [p(s, smap['total']) for s, smap in self.result_map.items()]
             progress_list.append("Done Key: {}".format(self.ACTION_DONE_KEY))
             progress_list.append("Passed Count: {}".format(self.passed_count))
             self.progress_str = ', '.join(progress_list)

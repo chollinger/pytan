@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -29,5 +30,5 @@ class WhiteListedUrl(BaseType):
         self.metadata = None
         
 
-from metadata_list import MetadataList
+from .metadata_list import MetadataList
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -53,10 +54,10 @@ class Question(BaseType):
         self.saved_question = None
         
 
-from select_list import SelectList
-from group import Group
-from group import Group
-from user import User
-from group import Group
-from saved_question import SavedQuestion
+from .select_list import SelectList
+from .group import Group
+from .group import Group
+from .user import User
+from .group import Group
+from .saved_question import SavedQuestion
 

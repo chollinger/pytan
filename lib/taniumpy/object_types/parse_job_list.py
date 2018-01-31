@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class ParseJobList(BaseType):
         
         self.parse_job = []
 
-from parse_job import ParseJob
+from .parse_job import ParseJob
 

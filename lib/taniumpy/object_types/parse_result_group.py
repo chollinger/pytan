@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -27,6 +28,6 @@ class ParseResultGroup(BaseType):
         self.question = None
         
 
-from parse_result_list import ParseResultList
-from question import Question
+from .parse_result_list import ParseResultList
+from .question import Question
 

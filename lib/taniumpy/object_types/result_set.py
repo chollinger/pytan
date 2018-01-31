@@ -1,3 +1,5 @@
+from builtins import str
+from builtins import object
 from .column_set import ColumnSet
 from .row import Row
 from .sensor import Sensor
@@ -316,7 +318,7 @@ class ResultSet(object):
                     # working on, set the value to the indexed value of this
                     # value
                     new_row[h_name] = [row[h_idx][val_idx]]
-            new_row = new_row.values()
+            new_row = list(new_row.values())
             return new_row
 
         def fix_newlines(val):

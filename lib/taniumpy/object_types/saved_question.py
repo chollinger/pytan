@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -65,10 +66,10 @@ class SavedQuestion(BaseType):
         self.metadata = None
         
 
-from question import Question
-from package_spec_list import PackageSpecList
-from user import User
-from user import User
-from user import User
-from metadata_list import MetadataList
+from .question import Question
+from .package_spec_list import PackageSpecList
+from .user import User
+from .user import User
+from .user import User
+from .metadata_list import MetadataList
 

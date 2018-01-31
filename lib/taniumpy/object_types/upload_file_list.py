@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class UploadFileList(BaseType):
         
         self.upload_file = []
 
-from upload_file import UploadFile
+from .upload_file import UploadFile
 

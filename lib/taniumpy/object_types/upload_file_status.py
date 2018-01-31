@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -27,5 +28,5 @@ class UploadFileStatus(BaseType):
         self.file_parts = None
         
 
-from upload_file_list import UploadFileList
+from .upload_file_list import UploadFileList
 

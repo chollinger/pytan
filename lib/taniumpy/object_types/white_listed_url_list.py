@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class WhiteListedUrlList(BaseType):
         
         self.white_listed_url = []
 
-from white_listed_url import WhiteListedUrl
+from .white_listed_url import WhiteListedUrl
 

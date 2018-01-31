@@ -1,5 +1,6 @@
 
 
+from builtins import object
 class ResultInfo(object):
     """Wrap the result of GetResultInfo"""
 

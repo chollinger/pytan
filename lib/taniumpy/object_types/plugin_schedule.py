@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -59,7 +60,7 @@ class PluginSchedule(BaseType):
         self.last_run_sql = None
         
 
-from plugin_argument_list import PluginArgumentList
-from user import User
-from plugin_sql import PluginSql
+from .plugin_argument_list import PluginArgumentList
+from .user import User
+from .plugin_sql import PluginSql
 

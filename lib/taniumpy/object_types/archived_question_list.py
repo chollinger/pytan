@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class ArchivedQuestionList(BaseType):
         
         self.archived_question = []
 
-from archived_question import ArchivedQuestion
+from .archived_question import ArchivedQuestion
 

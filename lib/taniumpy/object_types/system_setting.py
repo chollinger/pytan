@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -41,6 +42,6 @@ class SystemSetting(BaseType):
         self.metadata = None
         
 
-from audit_data import AuditData
-from metadata_list import MetadataList
+from .audit_data import AuditData
+from .metadata_list import MetadataList
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -49,5 +50,5 @@ class PackageFile(BaseType):
         self.file_status = None
         
 
-from package_file_status_list import PackageFileStatusList
+from .package_file_status_list import PackageFileStatusList
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class PackageFileTemplateList(BaseType):
         
         self.file_template = []
 
-from package_file_template import PackageFileTemplate
+from .package_file_template import PackageFileTemplate
 

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -23,5 +24,5 @@ class SensorSubcolumnList(BaseType):
         
         self.subcolumn = []
 
-from sensor_subcolumn import SensorSubcolumn
+from .sensor_subcolumn import SensorSubcolumn
 

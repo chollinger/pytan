@@ -1,3 +1,4 @@
+from builtins import object
 from .sensor_types import SENSOR_TYPE_MAP
 
 

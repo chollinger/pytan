@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 
 # Copyright (c) 2015 Tanium Inc
 #
@@ -25,7 +26,7 @@ class QuestionList(BaseType):
         self.cache_info = None
         self.question = []
 
-from question_list_info import QuestionListInfo
-from question import Question
-from cache_info import CacheInfo
+from .question_list_info import QuestionListInfo
+from .question import Question
+from .cache_info import CacheInfo
 
